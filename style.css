@@ -197,105 +197,6 @@ header{
     visibility: hidden;
     transition: opacity 0.5s ease-out;
 }
-
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    
-    header {
-        padding: 20px 50px;
-    }
-
-    .logo {
-        font-size: 1.5em;
-    }
-
-    .navigation a {
-        font-size: 0.9em;
-        padding: 5px 10px;
-    }
-
-    #text {
-        font-size: 3em;
-    }
-
-    .sec {
-        padding: 20px 50px;
-    }
-
-    .sec h2 {
-        font-size: 2em;
-    }
-
-    .sec p {
-        font-size: 0.9em;
-    }
-
-    .parallax img#gate-left,
-    .parallax img#gate-right,
-    .parallax img#grass {
-        display: none;
-    }
-    /* .scroll {
-        width: 50px;
-        height: 50px;
-    }
-
-    #scrolltext {
-        font-size: 0.85em;
-    } */
-}
-@media (max-width: 480px) {
-
-
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navigation a {
-        margin: 10px 0;
-        font-size: 1em;
-    }
-
-    .parallax {
-        height: 70vh;
-    }
-
-    #text {
-        font-size: 2.5em;
-    }
-
-    .sec {
-        padding: 10px 20px;
-    }
-
-    .sec h2 {
-        font-size: 1.5em;
-    }
-
-    .sec p {
-        font-size: 0.85em;
-    }
-    .parallax img#gate-left,
-.parallax img#gate-right,
-.parallax img#grass {
-    display: none;
-}
-.scroll {
-    display: none;
-}
-
-#scrolltext {
-    display: none;
-}
-}
 @media screen and (max-width: 1023px) {
     .desktop-message {
         display: block;
@@ -303,7 +204,22 @@ header{
         font-size: 18px;
         color: #333;
         margin-top: 20px;
+        margin-bottom: 700px;
+        justify-content: center;
     }
+    header{
+        display: none;
+    }
+    .parallax{
+        display: none;
+    }
+    .about{
+        display: none;
+    }
+    h2{
+        display: none;
+    }
+
 }
 @media screen and (min-width: 1024px) {
     .sec p{
