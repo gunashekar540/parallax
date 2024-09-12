@@ -125,6 +125,20 @@ header{
     font-weight: 300;
     text-align: justify;
 }
+#audio-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
 /* Scroll Down Styling */
 .scroll-container {
     position: absolute;

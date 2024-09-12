@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parallax About</title>
+    <title>Guna Parallax</title>
     <link rel="stylesheet" href="parallax.css" />
+    <link rel="icon" href="guna.png" />
   </head>
   <body>
-    <audio autoplay loop></audio>
-    <source src="rakshasudu.mp3" type="audio/mpeg" />
-  </audio>
+    <p id="audio-message">Click anywhere to start/stop the audio</p>
+    <audio id="bg-audio" loop preload="auto">
+      <source src="rakshasudu.mp3" type="audio/mpeg" />
+    </audio>
     <header>
       <h2 class="logo">Guna <b>.</b></h2>
       <nav class="navigation">
@@ -52,9 +54,33 @@
         technologies, and contributing to open-source projects.<br /><br /><br />
       </p>
       <p class="desktop-message">
-        ***<i>This site is best viewed on a desktop for an enhanced experience!</i> ***<br /><br /><br /><br><br>
+        ***<i
+          >This site is best viewed on a desktop for an enhanced experience!</i
+        >
+        ***<br /><br /><br /><br /><br />
       </p>
     </section>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+    const message = document.getElementById("audio-message");
+
+    // Hide the message after 5 seconds
+    setTimeout(function () {
+      message.style.display = "none";
+    }, 3000); // 5000 milliseconds = 5 seconds
+  });
+      window.addEventListener("click", function () {
+        const audio = document.getElementById("bg-audio");
+    
+        // Check if audio is already playing
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      });
+    </script>
+    
     <script src="parallax.js"></script>
   </body>
 </html>
